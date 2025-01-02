@@ -1,1 +1,1 @@
-copy .config into your user config
+copy dotconfig to ~/.config
