@@ -1,0 +1,11 @@
+[wofi]
+show = dmenu
+# xoffset = "100px"
+# yoffset = "100px"
+width = 500
+height = 250
+#style = "~/.config/waybar/custom/shutdown-btn/style.css"
+#stylesheet = "~.config/waybar/custom/shutdown-btn/mocha.css"
+prompt = "Testad"
+hide_scroll = true
+hide_search = true

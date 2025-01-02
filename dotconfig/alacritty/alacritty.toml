@@ -1,0 +1,16 @@
+live_config_reload = true
+
+
+# how to import themes: https://github.com/alacritty/alacritty-theme
+import = [
+    #"~/.config/alacritty/themes/themes/ashes_dark.toml"
+    #"~/.config/alacritty/themes/themes/ashes_light.toml"
+    #"~/.config/alacritty/themes/themes/baitong.toml"
+]
+
+[font]
+size = 10.0
+
+[env]
+  LANG = "en_US.UTF-8"
+
