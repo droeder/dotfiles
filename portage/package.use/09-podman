@@ -1,0 +1,9 @@
+ app-containers/podman fuse rootless seccomp
+# required by app-containers/containers-common-0.57.0::gentoo
+# required by app-containers/podman-4.8.3::gentoo
+# required by app-containers/podman (argument)
+>=net-firewall/iptables-1.8.9 nftables
+
+# required by sys-kernel/gentoo-kernel-bin-6.6.13::gentoo[initramfs]
+# required by virtual/dist-kernel-6.6.13::gentoo
+>=sys-kernel/installkernel-18-r1 dracut

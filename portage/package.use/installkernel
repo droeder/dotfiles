@@ -1,0 +1,6 @@
+sys-kernel/installkernel dracut
+# required by media-libs/fontconfig-2.15.0-r1::gentoo
+# required by www-client/firefox-bin-133.0.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.13.3 abi_x86_32

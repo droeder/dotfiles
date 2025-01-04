@@ -1,0 +1,4 @@
+x11-drivers/nvidia-drivers tools
+# required by sys-kernel/gentoo-kernel-bin-6.6.13::gentoo[initramfs]
+# required by virtual/dist-kernel-6.6.13::gentoo
+>=sys-kernel/installkernel-18-r1 dracut

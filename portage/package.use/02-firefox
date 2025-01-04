@@ -1,0 +1,4 @@
+www-client/firefox hardened
+# required by www-client/firefox-115.5.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.13.1 postproc
