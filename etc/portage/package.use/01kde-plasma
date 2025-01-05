@@ -1,0 +1,11 @@
+kde-plasma/plasma-meta blootooth browser-extension browser-integration colord crash-handler display-manager discover gtk networkmanager pulseaudio systemd thunderbolt
+
+# required by kde-plasma/kwin-5.27.9-r1::gentoo
+# required by kde-plasma/plasma-desktop-5.27.9-r1::gentoo
+# required by kde-plasma/plasma-meta-5.27.9-r1::gentoo
+# required by kde-plasma/plasma-meta (argument)
+>=kde-frameworks/kglobalaccel-5.112.0 X
+# required by kde-plasma/khotkeys-5.27.9::gentoo
+# required by kde-plasma/plasma-meta-5.27.9-r1::gentoo
+# required by kde-plasma/plasma-meta (argument)
+>=kde-frameworks/kdelibs4support-5.112.0 X

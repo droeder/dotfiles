@@ -1,0 +1,10 @@
+x11-wm/enlightenment acpi exif
+# required by x11-wm/enlightenment-0.26.0::gentoo[wayland]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/efl-1.27.0-r1 drm
+# required by kde-plasma/plasma-workspace-5.27.11.1-r1::gentoo[fontconfig]
+# required by kde-plasma/plasma-meta-5.27.11-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/fontconfig-2.15.0 abi_x86_32

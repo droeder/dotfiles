@@ -1,0 +1,5 @@
+>=app-editors/vscode-1.63.2 ~amd64
+sys-libs/libudev-compat ~amd64
+>=gui-app/hyprpaper-0.7.0::guru ~amd64
+>=gui-apps/hyprpaper-0.7.0::guru ~amd64
+

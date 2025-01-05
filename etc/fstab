@@ -1,0 +1,38 @@
+# /etc/fstab: static file system information.
+#
+# See the manpage fstab(5) for more information.
+#
+# NOTE: The root filesystem should have a pass number of either 0 or 1.
+#       All other filesystems should have a pass number of 0 or greater than 1.
+#
+# NOTE: Even though we list ext4 as the type here, it will work with ext2/ext3
+#       filesystems.  This just tells the kernel to use the ext4 driver.
+#
+# NOTE: You can use full paths to devices like /dev/sda3, but it is often
+#       more reliable to use filesystem labels or UUIDs. See your filesystem
+#       documentation for details on setting a label. To obtain the UUID, use
+#       the blkid(8) command.
+
+# <fs>			<mountpoint>	<type>		<opts>		<dump> <pass>
+
+#LABEL=boot		/boot		ext4		defaults	1 2
+#UUID=58e72203-57d1-4497-81ad-97655bd56494		/		xfs		defaults		0 1
+#LABEL=swap		none		swap		sw		0 0
+#/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+
+
+#/dev/nvme0n1p1: 
+PARTUUID=fe1fbd16-f973-4b1c-bc70-b0a9580c6359 /efi vfat defaults 0 2
+PARTUUID=fe1fbd16-f973-4b1c-bc70-b0a9580c6359 /boot/efi vfat defaults 0 2
+
+#/dev/nvme0n1p5:
+PARTUUID=fcf07be7-4f83-5c43-9a8a-76b9cc8ba6bd none swap sw 0 0
+
+#/dev/nvme0n1p6: 
+PARTUUID=9aee15cb-19f1-b044-ae3b-f4e21a4ddb9d / btrfs defaults,noatime 0 1
+
+# mount external drive if available(nofail), don't wait longer than 5sec(device-timeout), NFS options (nodev,nosuid)
+# https://linuxopsys.com/topics/linux-nfs-mount-entry-in-fstab-with-example
+#raspberrypi:/mnt/mycloud		      /mnt/mycloud	nfs	defaults,nofail,x-systemd.device-timeout=5,noatime,rw,nodev,nosuid,soft,timeo=15		0 2
+raspberrypi:/mnt/mycloud		      /mnt/mycloud	nfs	defaults,nofail,noatime,rw,nodev,nosuid,soft,timeo=15		0 2
+

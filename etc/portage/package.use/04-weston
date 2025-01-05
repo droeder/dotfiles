@@ -1,0 +1,4 @@
+dev-libs/weston desktop fullscreen jpg pipewire resize-optimization systemd wayland-compositor xwayland
+# required by sys-boot/os-prober-1.81::gentoo
+# required by sys-boot/os-prober (argument)
+>=sys-boot/grub-2.06-r9 mount
